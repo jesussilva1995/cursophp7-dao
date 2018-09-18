@@ -26,6 +26,11 @@
 	//$usuario->login("sqlserver","alb2c3");
 	//echo $usuario;
 
+	//Insert de novo usuario usando stored procedure
+	$aluno = new Usuario("joaopedro","aluno");
 
+	$aluno->insert();
+
+	echo $aluno;
 
  ?>
