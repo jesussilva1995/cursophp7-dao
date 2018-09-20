@@ -31,11 +31,15 @@
 	//$aluno->insert();
 	//echo $aluno;
 
-	$usuario = new Usuario();
-
+	//Alterar um usuario pelo ID
+	/*$usuario = new Usuario();
 	$usuario->loadById(1029);
-
 	$usuario->update("jesusalterado","12345678");
+	echo $usuario;*/
 
+	//Elimina um usuario pelo ID
+	$usuario = new Usuario();
+	$usuario->loadById(1029);
+	$usuario->delete();
 	echo $usuario;
  ?>
