@@ -27,10 +27,15 @@
 	//echo $usuario;
 
 	//Insert de novo usuario usando stored procedure
-	$aluno = new Usuario("joaopedro","aluno");
+	//$aluno = new Usuario("jesussilva","aluno");
+	//$aluno->insert();
+	//echo $aluno;
 
-	$aluno->insert();
+	$usuario = new Usuario();
 
-	echo $aluno;
+	$usuario->loadById(1029);
 
+	$usuario->update("jesusalterado","12345678");
+
+	echo $usuario;
  ?>
